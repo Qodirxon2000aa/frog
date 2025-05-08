@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 
 export default function LoadingScreen() {
   const [percentage, setPercentage] = useState(1)
-  const [frogPosition, setFrogPosition] = useState({ x: 10, y: 50 })
+  const [frogPosition, setFrogPosition] = useState({ x: 10, y: 30 })
   const [jumping, setJumping] = useState(false)
 
   useEffect(() => {
@@ -60,7 +60,9 @@ export default function LoadingScreen() {
           className={`absolute transition-all duration-300 ease-in-out ${jumping ? "translate-y-[-20px]" : ""}`}
           style={{ left: `${frogPosition.x}%`, bottom: `${frogPosition.y}%` }}
         >
-          <div className="text-4xl transform scale-x-[-1]">🐸</div>
+          <div className="text-4xl transform scale-x-[-1]">
+            <img width={84} height={74} src="/frog-icon.png" alt="" />
+          </div>
         </div>
 
         {/* Bubbles */}

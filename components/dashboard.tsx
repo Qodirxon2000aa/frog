@@ -263,7 +263,9 @@ export default function Dashboard() {
                 >
                   <div className="flex items-center">
                     <div className="w-12 h-12 bg-green-100 rounded-lg mr-3 flex items-center justify-center">
-                      <span className="text-2xl">🐸</span>
+                      <span className="text-2xl">
+                        <img src="/frog-icon.png" alt="" />
+                      </span>
                     </div>
                     <div className="flex-1">
                       <h3 className="font-bold text-gray-800">SUBJECT FR-357</h3>
@@ -283,7 +285,7 @@ export default function Dashboard() {
                 >
                   <div className="flex items-center">
                     <div className="w-12 h-12 bg-green-100 rounded-lg mr-3 flex items-center justify-center">
-                      <span className="text-2xl">🐸</span>
+                      <span className="text-2xl"><img src="/frog-icon.png" alt="" /></span>
                     </div>
                     <div className="flex-1">
                       <h3 className="font-bold text-gray-800">SUBJECT FR-358</h3>
